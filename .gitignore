@@ -1,0 +1,15 @@
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Word doc (not needed for web deployment)
+Implementation Plan.docx
+implementation_plan.md

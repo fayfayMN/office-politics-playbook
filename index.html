@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PlayBook — Your Office Politics Decoder. Navigate workplace culture, decode hidden meanings, and protect your career.">
+  <meta name="theme-color" content="#0a0a0f">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>PlayBook — Office Politics Decoder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h1 class="logo">🎭 PlayBook</h1>
+        <p class="tagline">Your Office Politics Decoder</p>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-title">🧭 UNDERSTAND</div>
+        <a class="nav-link" data-page="unwritten-rules">Unwritten Rules</a>
+        <a class="nav-link" data-page="lost-in-translation">Lost in Translation</a>
+        <a class="nav-link" data-page="meeting-culture">Meeting Culture</a>
+        <a class="nav-link" data-page="email-fluency">Email &amp; Slack Fluency</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-title">🛡️ PROTECT</div>
+        <a class="nav-link" data-page="burnout-shield">Burnout Shield</a>
+        <a class="nav-link" data-page="red-flag-radar">Red Flag Radar</a>
+        <a class="nav-link" data-page="know-your-rights">Know Your Rights</a>
+        <a class="nav-link" data-page="documentation-habits">Documentation Habits</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-title">⚔️ NAVIGATE</div>
+        <a class="nav-link" data-page="play-library">Play Library</a>
+        <a class="nav-link" data-page="scenario-simulator">Scenario Simulator</a>
+        <a class="nav-link" data-page="response-composer">Response Composer</a>
+        <a class="nav-link" data-page="situation-logger">Situation Logger</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-title">📺 RESOURCES</div>
+        <a class="nav-link" data-page="resource-hub">Resource Hub</a>
+      </div>
+    </nav>
+
+    <!-- Mobile menu toggle -->
+    <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+      <!-- Search bar -->
+      <div id="search-container" class="search-container">
+        <input type="text" id="global-search" class="search-input" placeholder="Search plays, phrases, scenarios...">
+        <div id="search-results" class="search-results hidden"></div>
+      </div>
+
+      <!-- Page content rendered here -->
+      <div id="page-content"></div>
+    </main>
+  </div>
+
+  <!-- Data files -->
+  <script src="js/data/plays.js"></script>
+  <script src="js/data/phrases.js"></script>
+  <script src="js/data/scenarios.js"></script>
+  <script src="js/data/checklists.js"></script>
+  <script src="js/data/resources.js"></script>
+  <script src="js/data/timeline.js"></script>
+
+  <!-- Utilities -->
+  <script src="js/utils/storage.js"></script>
+  <script src="js/utils/search.js"></script>
+  <script src="js/utils/animations.js"></script>
+
+  <!-- Modules -->
+  <script src="js/modules/cultural-decoder.js"></script>
+  <script src="js/modules/defense-systems.js"></script>
+  <script src="js/modules/tactical-playbook.js"></script>
+  <script src="js/modules/scenario-simulator.js"></script>
+  <script src="js/modules/response-composer.js"></script>
+  <script src="js/modules/situation-logger.js"></script>
+  <script src="js/modules/resource-hub.js"></script>
+
+  <!-- App entry point -->
+  <script src="js/app.js"></script>
+</body>
+</html>
